@@ -12,7 +12,7 @@ import {
   RISK_PICK_GAME_FAILED} from '../action/riskAction';
 
 const getF = function*(action) {
-    const data = yield call(get, `http://game-board-back-flooven.herokuapp.com/risk/${action.payload.uuid}`);
+    const data = yield call(get, `https://game-board-back-flooven.herokuapp.com/risk/${action.payload.uuid}`);
     
     if(data) {
       yield put({ type: RISK_GET_GAME_SUCCESS, payload: { data: data }});
@@ -22,7 +22,7 @@ const getF = function*(action) {
 };
 
 const postF = function*(action) {
-    const data = yield call(post, `http://game-board-back-flooven.herokuapp.com/risk/${action.payload.nbPlayer}`);
+    const data = yield call(post, `https://game-board-back-flooven.herokuapp.com/risk/${action.payload.nbPlayer}`);
 
     if(data) {
       yield put({type: RISK_GET_GAME_SUCCESS, payload: { data: data }});
@@ -32,7 +32,7 @@ const postF = function*(action) {
 };
 
 const getPick = function*(action) {
-    const data = yield call(get, `http://game-board-back-flooven.herokuapp.com/risk/${action.payload.uuid}/pick`);
+    const data = yield call(get, `https://game-board-back-flooven.herokuapp.com/risk/${action.payload.uuid}/pick`);
   
     if(data) {
       yield put({type: RISK_PICK_GAME_SUCCESS, payload: { card: data }});
