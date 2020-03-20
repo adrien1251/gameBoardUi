@@ -1,0 +1,9 @@
+.horizontal-arrangment-parent {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.horizontal-arrangment-parent div {
+    flex: 1;
+}
