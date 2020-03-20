@@ -11,7 +11,7 @@ const initialState = {
 export default function riskReducer(state = initialState, action) {
     switch (action.type) {
         case RISK_GET_GAME_SUCCESS: 
-            return {...state, gameBoard: action.payload.data, actualCard: action.payload.data.deck[action.payload.data.actualCardIndex]};
+            return {...state, gameBoard: action.payload.data, actualCard: action.payload.data.actualCard};
         case RISK_GET_GAME_FAILED:
             return {...state, error: 'Une erreur est survenu'}
         case RISK_PICK_GAME_SUCCESS:
