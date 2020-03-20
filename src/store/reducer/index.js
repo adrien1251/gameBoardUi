@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import genericReducer from './genericReducer';
+import riskReducer from './riskReducer';
 
 const reducers = combineReducers({
-  genericReducer,
+  riskReducer,
 })
 
 export default (state, action) => {

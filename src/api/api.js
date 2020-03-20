@@ -1,4 +1,4 @@
-export const get = async (bearer, api_url) => {
+export const get = async (api_url) => {
     try {
         const response = await fetch(
             api_url,
@@ -14,7 +14,7 @@ export const get = async (bearer, api_url) => {
     }
 }
 
-export const post = async (bearer, api_url, body, isStringifyBody) => {
+export const post = async (api_url,) => {
     try {
         const response = await fetch(
             api_url,

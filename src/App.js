@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react';
 import './App.css';
 import { connect } from 'react-redux';
+import Risk from './board/Risk';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 const App = (props) => {
   return (
-    <div>
-      <h1>Worked</h1>
-    </div>
+    <Router>
+      <Route path="" component={Risk} />
+    </Router>
   );
 }
 

@@ -1,9 +1,9 @@
 import { all } from 'redux-saga/effects';
-import { watchGenericRequests } from './genericRequest';
+import { watchRiskRequests } from './riskRequest';
 
 const root = function*() {
     yield all([
-        watchGenericRequests()
+        watchRiskRequests()
     ]);
 };
 
