@@ -86,6 +86,7 @@ export default function PrimarySearchAppBar(props) {
           </div>
           <div className={classes.grow} />
           { props.plusEnable &&
+          <>
             <IconButton
                     aria-label="account of current user"
                     aria-controls="menu-appbar"
@@ -95,6 +96,7 @@ export default function PrimarySearchAppBar(props) {
                 >
                     <AddCircleIcon />
                 </IconButton>
+            <>
             }
         </Toolbar>
       </AppBar>

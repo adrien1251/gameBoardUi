@@ -7,7 +7,7 @@ import { Button, Container } from '@material-ui/core';
 import {CopyToClipboard} from 'react-copy-to-clipboard';
 
 const Risk = (props) => {
-    const [nbPlayer, setNbPlayer] = useState(2);
+    const [nbPlayer, setNbPlayer] = useState(4);
 
     const [loading, setLoading] = useState(false);
     const searchGame = (uuid) => {
